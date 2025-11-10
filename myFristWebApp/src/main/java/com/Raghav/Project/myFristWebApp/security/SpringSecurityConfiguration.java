@@ -26,8 +26,9 @@ public class SpringSecurityConfiguration {
 	
 	UserDetails userDetails1 = createNewUser("myFristWebApp", "Raghav@00");
 	UserDetails userDetails2 = createNewUser("Raghavendra", "Raghav@123");
-		
-	return new InMemoryUserDetailsManager(userDetails1,userDetails2);
+	UserDetails userDetails3 = createNewUser("Tridha", "Tridha@123");
+
+	return new InMemoryUserDetailsManager(userDetails1,userDetails2,userDetails3);
 		}
 		private UserDetails createNewUser(String username, String password) {
 			Function<String, String> passwordEncoder
