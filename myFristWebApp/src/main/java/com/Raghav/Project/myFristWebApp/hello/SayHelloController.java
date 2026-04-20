@@ -18,18 +18,18 @@ public class SayHelloController {
 	
 	@RequestMapping("say-hello-html")
 	@ResponseBody
-	public String sayHelloHtml() {
-		StringBuffer sb=new StringBuffer();
-		sb.append("<html>");
-		sb.append("<head>");
-		sb.append("<title>my first HTML page</title>");
-		sb.append("</head>");
-		sb.append("<body>");
-		sb.append("my first html page with body changed");
-		sb.append("</body>");
-		sb.append("</html>");
-		
-		//return "hello!what are you learning today?";
+public String sayHelloHtml() {
+	StringBuffer sb=new StringBuffer();
+	sb.append("<html>");
+	sb.append("<head>");
+	sb.append("<title>my first HTML page</title>");
+	sb.append("</head>");
+	sb.append("<body>");
+	sb.append("my first html page with body changed");
+	sb.append("</body>");
+	sb.append("</html>");
+	
+	//return "hello!what are you learning today?";
 	return sb.toString();
 	}
 	//

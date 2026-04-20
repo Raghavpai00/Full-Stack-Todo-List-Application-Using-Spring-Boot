@@ -37,8 +37,8 @@ public class ToDo {
 	private String username;
 	
 	@Size(min=10,message="enter atleast 10 charecters")
-	
 	private String description;
+	
 	private LocalDate targetDate;
 	private boolean done;
 
